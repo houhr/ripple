@@ -1,0 +1,81 @@
+
+In this homework you will modify our lousy WeatherBot to make it better.
+
+The requirements is to give an appropriate answer to quiestions like:
+"What is the weather in San Francisco today?"
+"What's the weather gonna be in SF today?"
+"Tell me the weather today in San Francisco"
+"Hi, weather in San Francisco, please"
+"weather"
+"is it going to be warm today?"
+"is it going to rain today?"
+
+To simplify things we will assume that the user will only ask about today (current conditions) or tomorrow.
+
+
+Part 0: Installation
+
+0.1 Make sure you are able to run NLTK examples from the class log.
+0.2 Install Python Weather API:
+Download: https://launchpad.net/python-weather-api/trunk/0.3.8/+download/pywapi-0.3.8.tar.gz
+Run: tar xzvf pywapi-0.3.8.tar.gz
+     cd pywapi-0.3.8
+     python setup.py build
+     sudo python setup.py install
+0.3 Copy the attached files weatherbot.py and weathercom.py into a directory and cd to that directory in your terminal.
+0.4 Run: python weatherbot.py -h
+    to see the command line options. Study the source code of weatherbot.py
+    NOTE: a good text editor for source code is Sublime http://www.sublimetext.com/
+    or Emacs http://emacsformacosx.com. Both of them will do syntax highlighting to make
+    your code look more readable. Allow yourself some time to get acquanted with one of these
+    editors.
+
+0.5 Come up with a name of your WeatherBot. Modify line:
+    print "Starting WeatherBot..."
+    to print the name of your bot.
+
+Part 1: Semantic Parsing (50% of the grade)
+
+1.1 Modify Part 2 of the code, parsing of topic, location, and date to be able to process as many requirements and similar user inputs as possible. For that perform the following:
+ A: ask your friends to come up with different ways of asking for a weather and write them down in a list.
+ B: design your semantic parser for topic, location and date that can parse as many of the utterance from the list as possible.
+ C: explain which utterances you cannot process and why. Your system will not be able to handle everything and that's OK!
+ D: Test the performance by asking your friends to type any weather questions about today's or tomorrow's weather and seeing if your system works well.
+
+Repead A-D until you are satisfied with the parsing performance.
+
+You can use any tools you can find for semantic parsing, including:
+Python regular expressions: https://docs.python.org/2/library/re.html
+NLTK Named Entity Recognition: http://www.nltk.org/book/ch07.html and the example on the top page of http://www.nltk.org/
+
+Part 2: Natural Language Generation (50%)
+
+2.1 In steps 3-4 of weatherbot.py I provide the code to obtain the weather forecast dictionary from weather.com. You can see my simple generation code that uses the information about weather conditions and temperatures. To see all the info you can use refer to https://code.google.com/p/python-weather-api/wiki/Examples#Weather.com .
+
+Modify this code so that your output:
+
+A. reflects the personality of your WeatherBot.
+B. provides an emotional output depending on the weather conditions.
+C. uses syntactic alignment/entrainment: if the user question is short, the answer should be short, and so on.
+D. make it as natural as possible, including not being repetitive.
+
+
+2.2 Test the whole system with your friends to see how the like it. Write down their feedback and improve your system accordingly.
+
+2.3 Notice that the current WeatherBot does not use the default_unit information and only output Celsius. Fix this so that it outputs Farenheit too. You may have to translate Celsius into Farenheit inside your code.
+
+3. Submission:
+Email makatchev@gmail.com and robertopieraccini@cca.edu your version of weatherbot.py by noon, Friday September 25.
+
+4. Evaluation:
+
+We will evaluate your system using objective and subjective measures.
+
+4.1 Objective measures:
+
+We will have a secret list of our own test cases of user utterance. We will run your code against those utterances and collect:
+- Output error rate: percentage of test cases that were not answered correctly.
+- Parse error rate: percentage of test cases that were not parsed correctly.
+
+4.2 Subjective measures:
+Everyone in the class will run everyone's weather bots to evaluate each other's weatherbots based on criteria A-D from part 2.1.
