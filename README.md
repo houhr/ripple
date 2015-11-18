@@ -8,14 +8,17 @@ This is an art installation project that generate visual effects based on sound 
 
 1. Start fadecandy server
 
-
+<pre><code>
     cd ripple/fadecandy/bin/
     ./fcserver-osx
+</code></pre>
 
 2. Start the program
 
-
+<pre><code>
     python ripple.py
+</code></pre>
+
 
 
 ## Slides
