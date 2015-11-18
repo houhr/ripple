@@ -1,9 +1,14 @@
 # Ripple
 
+## Team members
+1. Ruiwen Xu
+2. Bo Peng
+3. Hongru Hou
+
+
 ## Description
 
-This is an art installation project that generate visual effects based on fucking sound input.
-— Pei Pei
+This is an art installation project that generate visual effects based on sound input.
 
 ## Installation
 
