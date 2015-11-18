@@ -2,10 +2,11 @@
 
 ## Description
 
-This is an art installation project that generate visual effects based on sound input. 
+This is an art installation project that generate visual effects based on sound input. f
 
 ## Installation
 
+  python ripple.py
 
 ## Slides
 
