@@ -1,5 +1,9 @@
 # Ripple
 
+## Description
+
+This is an art installation project that generate visual effects based on sound input. 
+
 ## Installation
 
 
