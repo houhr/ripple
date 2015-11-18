@@ -69,32 +69,13 @@ if __name__=="__main__":
         usage()
         sys.exit(2)
 
-
-    # parse command line arguments
-    for o, a in opts:
-        if o in ("-h", "--help"):
-            usage()
-            sys.exit()
-        elif o in ("-u", "--units"):
-            default_unit = a
-        elif o in ("-c", "--current_city"):
-            default_city = a
-        else:
-            assert False, "unknown option"
-
-    print "Hi, I'm WeatherBot built by Hongru Hou"   # modify this line to add the name of your bot.
-
+    print "This is an art installation project that generate visual effects based on sound input."   # modify this line to add the name of your bot.
 
     stopped = False
-    is_first_question = True
     while not stopped:
 
         # Step 1: get the user input
-        # user_input = raw_input(question)
-        # user_input = get_google_asr()
-        user_input = "application"
-
-        print user_input
+        user_input = get_google_asr()
         user_input = user_input.lower()
         words = user_input.split()
 
@@ -114,13 +95,6 @@ if __name__=="__main__":
                 i = int(random.randrange(0, 256))
                 showCentralDot(w[length - 1 - index], (i*i%255, i*i*i%255, i*i*i*i%255))
 
-
         # check if the user wants to quit
         if user_input == "quit":
             break # exit the loop right away
-
-        #parse location
-        # tokens = nltk.word_tokenize(user_input)
-        # tagged = nltk.pos_tag(tokens)
-        # chunk = nltk.chunk.ne_chunk(tagged)
-        # chunk.draw()
