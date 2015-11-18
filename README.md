@@ -6,7 +6,8 @@ This is an art installation project that generate visual effects based on sound 
 
 ## Installation
 
-  python ripple.py
+    python ripple.py
+
 
 ## Slides
 
