@@ -2,7 +2,7 @@
 
 ## Description
 
-This is an art installation project that generate visual effects based on sound input. f
+This is an art installation project that generate visual effects based on fucking sound input.
 
 ## Installation
 
