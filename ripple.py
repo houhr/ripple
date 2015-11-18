@@ -69,7 +69,7 @@ if __name__=="__main__":
         usage()
         sys.exit(2)
 
-    print "This is an art installation project that generate visual effects based on sound input."   # modify this line to add the name of your bot.
+    print "This is an art installation project that generate visual effects based on sound input."
 
     stopped = False
     while not stopped:
