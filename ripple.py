@@ -124,6 +124,3 @@ if __name__=="__main__":
         # tagged = nltk.pos_tag(tokens)
         # chunk = nltk.chunk.ne_chunk(tagged)
         # chunk.draw()
-
-
-    print "Have a good one."
